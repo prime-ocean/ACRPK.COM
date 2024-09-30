@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACRPK.com</title>
+    <link rel="icon" href="https://via.placeholder.com/16" type="image/png"> <!-- إضافة الأيقونة العلوية -->
+    <style>
+        body {
+            background: #0f0c29;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #FCFCFC;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h3 {
+            line-height: 1.5;
+            font-size: 1.2em;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .button img {
+            width: 100px; /* يمكن تغيير الحجم حسب الحاجة */
+            height: auto;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The domain name </h1>
+        <h1 style="color: yellow;">ACRPK.COM</h1>
+        <h2>is for sale!</h2>
+        <h4>
+            This name could be the perfect fit for your brand's success<br><br>
+            Increase Website Traffic<br>
+            Quick & Easy Transfer To You<br>
+            Secure Payment Options: Escrow, GoDaddy, or Sedo<br>
+            Global reach, choose .com<br><br>
+            Don't waste any more time.<br>
+            Send me a message to get more details on how to grab this premium domain name!
+        </h4>
+        
+        <div class="contact-info">
+            <a href="mailto:primeoceandomains@gmail.com" style="color: #FCFCFC;">primeoceandomains@gmail.com</a>
+        </div>
+
+        <div>
+            <a class="button" href="https://www.godaddy.com/forsale/acrpk.com" target="_blank">
+                <img src="https://via.placeholder.com/100" alt="Fill Form">
+            </a>
+            <a class="button" href="https://www.escrow.com" target="_blank">
+                <img src="https://via.placeholder.com/100" alt="Send Message">
+            </a>
+            <a class="button" href="https://sedo.com/search/details/?ab_test_odp_version=A&domain=acrpk.com" target="_blank">
+                <img src="https://via.placeholder.com/100" alt="Secure Payment">
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        let url = window.location.origin;
+        if (url !== 'null' && typeof url === 'string') {
+            url = url.replace('https://', '').replace('www.', ''); // remove https:// and www.
+            url = url.charAt(0).toUpperCase() + url.slice(1); // Capitalize first letter
+            // Replace "This domain" and title with url:
+            const siteName = document.getElementById('site-name');
+            siteName.innerHTML = url;
+            document.title = `${url} For Sale`;
+        }
+    </script>
+</body>
+</html>
